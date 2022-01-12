@@ -1,9 +1,6 @@
 /* Populate database with sample data. */
 
 
-
-
-
   INSERT INTO animals (
     name,
     date_of_birth,
@@ -44,7 +41,7 @@
     weight_kg
   )   VALUES (
     'Pikachu',
-    '2021-01-07'
+    '2021-01-07',
     1,
     false,
     15.04
