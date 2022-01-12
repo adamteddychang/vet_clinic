@@ -130,7 +130,7 @@ INSERT INTO animals (
     neutered,
     weight_kg
   )   VALUES (
-    'Bormon',
+    'Boarmon',
     '2005-06-07',
     7,
     true,
@@ -152,3 +152,99 @@ INSERT INTO animals (
     17
   );
 -- Animal: Her name is Blossom. She was born on Oct 13th, 1998, and currently weighs 17kg. She is neutered and she has tried to escape 3 times.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Sam Smith',
+    34
+  );
+-- Sam Smith 34 years old.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Jennifer Orwell',
+    19
+  );
+-- Jennifer Orwell 19 years old.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Bob',
+    45
+  );
+-- Bob 45 years old.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Melody Pond',
+    77
+  );
+-- Melody Pond 77 years old.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Dean Winchester',
+    14
+  );
+-- Dean Winchester 14 years old.
+
+INSERT INTO owners (    
+    full_name,
+    age 
+  ) VALUES (
+    'Jodie Whittaker',
+    38
+  );
+-- Jodie Whittaker 38 years old.
+
+
+
+
+
+INSERT INTO species (
+  name
+  ) VALUES (
+  'Pokemon'
+  );
+  
+
+INSERT INTO species (
+  name
+  ) VALUES (
+  'Digimon'
+  );
+
+-- Set species_id
+UPDATE animals SET species_id = 1;
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+
+-- Set owners
+UPDATE animals SET owners_id = 1 WHERE name='Agumon';
+-- Sam Smith owns Agumon.
+
+UPDATE animals SET owners_id = 2 WHERE name='Gabumon';
+UPDATE animals SET owners_id = 2 WHERE name='Pikachu';
+-- Jennifer Orwell owns Gabumon and Pikachu.
+
+UPDATE animals SET owners_id = 3 WHERE name='Devimon';
+UPDATE animals SET owners_id = 3 WHERE name='Plantmon';
+-- Bob owns Devimon and Plantmon.
+
+UPDATE animals SET owners_id = 4 WHERE name='Charmander';
+UPDATE animals SET owners_id = 4 WHERE name='Squirtle';
+UPDATE animals SET owners_id = 4 WHERE name='Blossom';
+-- Melody Pond owns Charmander, Squirtle, and Blossom.
+
+UPDATE animals SET owners_id = 5 WHERE name='Angemon';
+UPDATE animals SET owners_id = 5 WHERE name='Boarmon';
+-- Dean Winchester owns Angemon and Boarmon.

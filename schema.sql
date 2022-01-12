@@ -1,4 +1,5 @@
 /* Database schema to keep the structure of entire database. */
+-- \i 'C:/Users/adamc/Documents/GitHub/vet_clinic/schema.sql'
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
@@ -43,4 +44,4 @@ ALTER TABLE animals
 ADD COLUMN owners_id int;
 
 ALTER TABLE animals
-ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
+ADD FOREIGN KEY (owners_id) REFERENCES owners(id);
